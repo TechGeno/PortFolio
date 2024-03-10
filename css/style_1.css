@@ -83,6 +83,7 @@
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
+    box-shadow: 5px 10px #56709e ;
     padding: 30px 15px;
     transition: all 0.3s ease;
 }

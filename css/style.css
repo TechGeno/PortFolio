@@ -106,6 +106,15 @@ ul {
     position: relative;
 }
 
+
+.fuller{
+    width: 100%;
+    display: flex;
+    flex:0 0 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
 .btn {
     font-size: 16px;
     font-weight: 500;
@@ -126,52 +135,163 @@ ul {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-/* --- aside --- */
-
-.aside {
+/* --- Nav --- */
+.navbar{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left : 0;
+    top : 0;
     display: flex;
-    font-family:sans-serif;
-    box-sizing: border-box;
+    border-right: 1px solid var(--bg-black-50);
     justify-content: center;
     align-items: center;
-    min-height: 20px;
-    margin:0;
-    padding: 0;
+    padding: 30px;
+    height: 100%;
     z-index: 10;
 }
-.aside a{
-    position: relative;
-    font-size:1.1em ;
-    font-weight: 500;
-    color: #D3D3D3;
-    text-decoration: none;
-    padding: 6px 20px;
-    transition: .5s;
-}
 
-.aside a:hover{
-    color: #0ef;
-}
-
-.aside a span {
+.navbar .logo
+{
     position: absolute;
-    top: 0;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.navbar .logo a
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size:  30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.navbar .nav-toggler
+{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-toggler span
+{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .nav-toggler span::before
+{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.navbar .nav-toggler span::after
+{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.navbar .logo a span
+{
+   font-family: 'Clicker Script' , cursive;
+   font-size: 40px;
+}
+
+.navbar .logo a::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.navbar .logo a::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top : 0;
+    right : 0;
+}
+
+.navbar .nav
+{
+    margin-top: 50px;
+}
+
+.navbar .nav li
+{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.navbar .nav li a {
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 12px 20px;
+    transition: color 0.3s; /* Added transition for color change */
+}
+
+.navbar .nav li a:hover {
+    color: #3498db; /* Changed color to change on hover */
+}
+
+.navbar .nav li a span {
+    position: absolute;
+    bottom: 0; 
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     z-index: 1;
-    border-bottom: 2px solid #0ef; /* Corrected typo here */
+    border-bottom: 2px solid #0ef;
     border-radius: 15px;
-    transform: scale(0) translateY(50px);
+    transform: scale(0) translateY(50px); 
     opacity: 0;
-    transition: .5s;
+    transition: transform 0.5s;
 }
 
-.aside a:hover span{
+.navbar .nav li a:hover span {
     transform: scale(1) translateY(0);
-    opacity: 1;
+    opacity: 1; 
 }
 
+
+/* ----Nav Ends---- */
 /* ---home--- */
 .home {
     min-height: 100vh;
@@ -225,6 +345,7 @@ h3.my-profession {
 }
 
 /* About */
+
 
 .about .about-content {
     flex: 0 0 100%;
