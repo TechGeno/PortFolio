@@ -189,13 +189,33 @@
 .contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
+    cursor:pointer;
 }
 
 @media (max-width:1199px)
 {
+    .main-container{
+        padding-top:50px ;
+    }
     .navbar
     {
-        left: -270px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Make the navbar take the full width of the screen */
+        height: auto;
+    }
+    .logo a{
+        position: fixed !important;
+        top: 10px;
+        left: 10px;
+    }
+    .navbar ul{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row; /* Arrange items horizontally */
+        justify-content: center; /* Center items horizontally, adjust as needed */
+        flex-wrap: wrap; 
     }
     .main-content
     {
@@ -205,6 +225,30 @@
     {
         display: block;
         margin-left: 0;
+    }
+}
+
+@media (max-width:1050px){
+    .logo a{
+        display: none;
+    }
+}
+
+@media (max-width:670px){
+    .main-container{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:600px){
+    .main-container{
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:400px){
+    .main-container{
+        padding-top: 200px;
     }
 }
 

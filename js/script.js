@@ -36,3 +36,40 @@ $(document).ready(function () {
         typingIndex = (typingIndex + 1) % typingTexts.length;
     }, 2000);
 });
+
+function sendMail() {
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        msg: document.getElementById("msg").value,
+        subject: document.getElementById("subject").value
+    };
+
+    const serviceID = "service_qxwq52j";
+    const templateID = "template_g1g0l18";
+
+    emailjs
+        .send(serviceID, templateID, params)
+        .then((res) => {
+            // Clear form fields after successful submission
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("msg").value = "";
+            document.getElementById("subject").value = "";
+            console.log(res);
+            alert("Your message has been sent successfully");
+        })
+        .catch((err) => console.error("Error sending email:", err));
+}
+
+
+function openEmail() {
+    var email = 'harshasri910@gmail.com';
+    window.location.href = 'mailto:' + email;
+}
+
+function openLocation() {
+    var location = 'MNNIT, Prayagraj';
+    var mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(location);
+    window.open(mapsUrl, '_blank');
+}

@@ -14,7 +14,14 @@
     <!-- javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "zMgx_6SPt_dwlusFi",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -26,20 +33,20 @@
         <!-- Navbar starts-->
         <nav class="navbar">
             <div class="logo">
-                 <a href="#homeSection"><span>S</span>riHarsha</a>
+                <a href="#homeSection"><span>S</span>riHarsha</a>
             </div>
             <div class="nav-toggler">
-                 <span></span>
+                <span></span>
             </div>
             <ul class="nav">
-                 <li><a href="#homeSection" class="active"><i class="fa fa-home"></i>Home</a></li>
-                 <li><a href="#aboutSection"><i class="fa fa-user"></i>About</a></li>
-                 <li><a href="#skillsSection"><i class="fa fa-list"></i>Skills</a></li>
-                 <li><a href="#projectsSection"><i class="fa fa-briefcase"></i>Projects</a></li>
-                 <li><a href="#contactSection"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#homeSection" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#aboutSection"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#skillsSection"><i class="fa fa-list"></i>Skills</a></li>
+                <li><a href="#projectsSection"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="#contactSection"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </nav>
-        
+
         <!-- Navbar ends -->
         <!-- main content starts -->
         <div class="main-content">
@@ -111,8 +118,9 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download Resume</a>
-                                            <!-- <a href="#contact" class="btn hire-me">Hire Me</a> -->
+                                            <a class="btn"
+                                                href="https://drive.google.com/file/d/1teA6tCDQA9aHFQdUO8KZr0qeBs1nPGXc/view?usp=drive_link"
+                                                download="Resume.pdf">Download Resume</a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,36 +135,27 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013-2015
+                                                        <i class="fa fa-calendar"></i> 2021-Present
                                                     </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem, ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Recusandae quia minus inventore quasi sit
-                                                        voluptas quidem rem fuga tenetur, maxime amet esse, numquam,
-                                                        consequuntur ea sunt.</p>
+                                                    <h4 class="timeline-title">Bachelors In Technology</h4>
+                                                    <p class="timeline-text">Currently pursuing a Bachelor's degree in Computer Science and Engineering at Motilal Nehru National Institute of Technology (MNNIT). Exploring various aspects of computer science, including algorithms, programming languages, and software development.</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013-2015
+                                                        <i class="fa fa-calendar"></i> 2019-2021
                                                     </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem, ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Recusandae quia minus inventore quasi sit
-                                                        voluptas quidem rem fuga tenetur, maxime amet esse, numquam,
-                                                        consequuntur ea sunt.</p>
+                                                    <h4 class="timeline-title">High School</h4>
+                                                    <p class="timeline-text">Completed high school education with a focus on Mathematics, Physics, and Computer Science at Al Khor International School (AKIS). Developed a strong foundation in core subjects and gained practical skills in programming and technology.</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013-2015
+                                                        <i class="fa fa-calendar"></i> 2009-2019
                                                     </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem, ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Recusandae quia minus inventore quasi sit
-                                                        voluptas quidem rem fuga tenetur, maxime amet esse, numquam,
-                                                        consequuntur ea sunt.</p>
-                                                </div>
+                                                    <h4 class="timeline-title">Junior School</h4>
+                                                    <p class="timeline-text">Began academic journey at Al Khor International School (AKIS), where I fostered a love for learning and discovery. Developed fundamental skills in various subjects and cultivated a curious mindset towards knowledge acquisition.</p>
+                                                </div>                                               
                                             </div>
                                         </div>
                                     </div>
@@ -273,16 +272,26 @@
                                                 </path>
                                             </svg>
                                         </a></small>
-                                        |
-                                        <small><a href="https://reshipi-5knh.onrender.com/">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                                    |
+                                    <small><a href="https://reshipi-5knh.onrender.com/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                                viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                                            </svg>
                                         </a></small>
                                 </h2>
-                                <p>A dynamic recipe blog website using Django.It is a comprehensive platform for food enthusiasts to share and explore culinary delights.</p>
-                                <p>-CRUD: Implemented full CRUD functionality allowing users to easily create, read, update, and delete .</p>
-                                <p>-User Authentication: Incorporated robust user authentication mechanisms using Django’s built-in authentications</p>
+                                <p>A dynamic recipe blog website using Django.It is a comprehensive platform for food
+                                    enthusiasts to share and explore culinary delights.</p>
+                                <p>-CRUD: Implemented full CRUD functionality allowing users to easily create, read,
+                                    update, and delete .</p>
+                                <p>-User Authentication: Incorporated robust user authentication mechanisms using
+                                    Django’s built-in authentications</p>
                                 <p>-Categories: Users can browse through different categories of recipes.</p>
-                                
+
                             </div>
                         </div>
                         <!-- portfolio item ends-->
@@ -300,11 +309,15 @@
                                             </svg>
                                         </a></small>
                                 </h2>
-                                <p>A crossest project for question and answering ,It is a collaborative effort where a group of individuals
+                                <p>A crossest project for question and answering ,It is a collaborative effort where a
+                                    group of individuals
                                     contribute their knowledge and expertise to answer questions asked by others.</p>
-                                <p>-User Profiles:Allow users to create accounts and set up profiles with relevant information.</p>
-                                <p>-Social Media Authentication: Users can login directly through social media platforms such as Google</p>
-                                <p>– Question Posting: Provided a interface for users to post questions with relevant details.</p>
+                                <p>-User Profiles:Allow users to create accounts and set up profiles with relevant
+                                    information.</p>
+                                <p>-Social Media Authentication: Users can login directly through social media platforms
+                                    such as Google</p>
+                                <p>– Question Posting: Provided a interface for users to post questions with relevant
+                                    details.</p>
                             </div>
                         </div>
                         <!-- portfolio item ends-->
@@ -322,10 +335,16 @@
                                             </svg>
                                         </a></small>
                                 </h2>
-                                <p>A multiplayer online drawing and guessing game where players take turns to doodle and guess each other's drawings in real-time</p>
-                                <p>-Drawing Tools: Users can utilize a variety of drawing tools such as brushes, colors, and erasers to create their sketches with ease.</p>
-                                <p>-Customizable Rooms: Players can create and join custom rooms, setting their own themes, drawing time limits, and maximum number of participants for a tailored gaming experience.</p>
-                                <p>-Guessing Interface: With a simple and intuitive interface, players can submit their guesses directly into the chat, enhancing the interactive and engaging nature of the game.</p>
+                                <p>A multiplayer online drawing and guessing game where players take turns to doodle and
+                                    guess each other's drawings in real-time</p>
+                                <p>-Drawing Tools: Users can utilize a variety of drawing tools such as brushes, colors,
+                                    and erasers to create their sketches with ease.</p>
+                                <p>-Customizable Rooms: Players can create and join custom rooms, setting their own
+                                    themes, drawing time limits, and maximum number of participants for a tailored
+                                    gaming experience.</p>
+                                <p>-Guessing Interface: With a simple and intuitive interface, players can submit their
+                                    guesses directly into the chat, enhancing the interactive and engaging nature of the
+                                    game.</p>
                             </div>
                         </div>
                         <!-- portfolio item ends-->
@@ -333,7 +352,7 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner">
                                 <h2>
-                                    Ball Following Bot  |
+                                    Ball Following Bot |
                                     <small><a href="https://github.com/TechGeno/Ball_following_bot-2022-23-Project">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -343,10 +362,15 @@
                                             </svg>
                                         </a></small>
                                 </h2>
-                                <p>Ball-following bot: An autonomous robot programmed to track and follow a ball's movement, commonly used in robotics and AI projects for various applications.</p>
-                                <p>Computer Vision Integration: Utilizes computer vision technology to detect and track the position of the ball in real-time, ensuring accurate tracking.</p>
-                                <p>Motor Control System: Equipped with motor control systems that enable precise movement adjustments, allowing the bot to follow the ball's trajectory smoothly.</p>
-                                <p>Adaptive Algorithms: Employs adaptive algorithms to analyze the ball's velocity and direction, enabling the bot to anticipate movements and adjust its position accordingly for effective ball tracking.</p>
+                                <p>Ball-following bot: An autonomous robot programmed to track and follow a ball's
+                                    movement, commonly used in robotics and AI projects for various applications.</p>
+                                <p>Computer Vision Integration: Utilizes computer vision technology to detect and track
+                                    the position of the ball in real-time, ensuring accurate tracking.</p>
+                                <p>Motor Control System: Equipped with motor control systems that enable precise
+                                    movement adjustments, allowing the bot to follow the ball's trajectory smoothly.</p>
+                                <p>Adaptive Algorithms: Employs adaptive algorithms to analyze the ball's velocity and
+                                    direction, enabling the bot to anticipate movements and adjust its position
+                                    accordingly for effective ball tracking.</p>
                             </div>
                         </div>
                         <!-- portfolio item ends-->
@@ -373,18 +397,18 @@
                         </div>
                         <!-- Contact info item ends-->
                         <!-- Contact info item starts-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa  fa-map-marker-alt"></i></div>
+                        <button class="contact-info-item padd-15" onclick="openLocation()">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                             <h4>Location</h4>
-                            <p>MNNIT , Prayagraj</p>
-                        </div>
+                            <p>MNNIT, Prayagraj</p>
+                        </button>
                         <!-- Contact info item ends-->
                         <!-- Contact info item starts-->
-                        <div class="contact-info-item padd-15">
+                        <button class="contact-info-item padd-15" onclick="openEmail()">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>Email</h4>
                             <p>harshasri910@gmail.com</p>
-                        </div>
+                        </button>                     
                         <!-- Contact info item ends-->
                         <!-- Contact info item starts-->
                         <div class="contact-info-item padd-15">
@@ -402,32 +426,32 @@
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="name">
+                                        <input type="text" class="form-control" placeholder="Name" id="name">
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" placeholder="Email" id="email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" class="form-control" placeholder="Subject" id="subject">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                        <textarea class="form-control" id="msg" placeholder="Message"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
+                                    <button type="submit" class="btn" onclick="sendMail()">Send Message</button>
                                 </div>
                             </div>
                         </div>
