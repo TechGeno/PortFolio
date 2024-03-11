@@ -35,9 +35,4 @@ $(document).ready(function () {
         });
         typingIndex = (typingIndex + 1) % typingTexts.length;
     }, 2000);
-
-    // Top toggle
-    document.querySelector('.name').addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top of the page when the name is clicked
-    });
 });
